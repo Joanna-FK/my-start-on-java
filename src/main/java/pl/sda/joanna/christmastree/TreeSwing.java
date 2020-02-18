@@ -16,5 +16,5 @@ public class TreeSwing {
         String s10 = " **x*******x*****x**\n";
         JOptionPane.showMessageDialog(null, s1 + s2 + s3 + s4 + s5 + s6 + s7 + s8 + s9 + s10);
 
-}
+    }
 }
