@@ -33,24 +33,23 @@ public class ChristmasTree {
 
     public static void stars(int a) {
 
-        for (int i = 0; i < a; i++) { //pętla i wykonuje sią a razy, aż dojdzie do a
+        for (int i = 0; i < a; i++) {
             System.out.print("*");
         }
         System.out.println();
     }
-
-//rysowanie choinki, wykorzystanie własnej metody dla rysowania gwiazdki
+    
 
     public static void printChristmasTree2(int christmasTreeHight) {//pętla w metodzie, robi się pętla w pętli
         for (int k = 1; k <= christmasTreeHight; k++) {
-            stars2(k); //metode stars wywo łujemy w metodzie printChristmasTree
+            stars2(k); 
         }
     }
 
     //napisać metode która nic nie zwraca,ale przyjmuje liczbę. wypisuje gwiazdke tyle razy ile wynosi int
     public static void stars2(int b) {
 
-        for (int i = 0; i < b; i++) { //pętla i wykonuje sią a razy, aż dojdzie do b
+        for (int i = 0; i < b; i++) {
             System.out.print("*");
         }
         System.out.println();
@@ -59,7 +58,7 @@ public class ChristmasTree {
 
     public static void christmas(int a) {
 
-        for (int i = 0; i < a; i++) { //pętla i wykonuje sią a razy, aż dojdzie do a
+        for (int i = 0; i < a; i++) {
             for (int j = 0; j <= i; j++) {
                 System.out.print("*");
             }
