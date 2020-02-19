@@ -8,29 +8,25 @@ public class Zadania {
 
         String a = "kotek ali"; //wypisz na ekran długość string i jego podstring (podnapis zaczyna się od pierwszej litery i kończy na ostatniej
         System.out.println(a.length());
-        System.out.println(a.substring(1,a.length()));  //przeładowniae metod owerloading
+        System.out.println(a.substring(1, a.length()));  //przeładowniae metod owerloading
         System.out.println(a.substring(1)); //od którego znaku ma zacząć, od 1 (0123456789)
-        int lenhth=a.length();
-        System.out.println(a.substring(1, lenhth));
-        String substring = a.substring(1,lenhth);
+        int length = a.length();
+        System.out.println(a.substring(1, length));
+        String substring = a.substring(1, length);
         System.out.println(substring);
         String a2 = new String("fasdfasdfasd"); //nie ma zastosowanie takie tworzenie stringów
-        String a3 = new String(a+a2);
-        String a4= a+ a2;
+        String a3 = new String(a + a2);
+        String a4 = a + a2;
 
 
-
-
-       pow(3, 5);
         System.out.println(pow(3, 5));
-
-
 
         print20();
         printOdds();
-        suma(3,5);
-        System.out.println(suma(3,5)); //wywołanie napisanej metody
+
+        System.out.println(suma(3, 5)); //wywołanie napisanej metody
     }
+
     //Napisać metodę która policzy potege danej liczby całkowitej.
     // Tj. przyjmuje dwa argumenty typu int i zwraca typ long.
     public static long pow(int a, int b) {
@@ -45,38 +41,39 @@ public class Zadania {
     //metodę statyczną (w tej samej klasie co metoda main) która nie przyjmuje żadych argumentów i zwraca void
     // i która wypisuje 20 kolejnych liczb od 0
 
-   public static void print20() {
+    public static void print20() {
 
-        for (int i=0; i<=20; i++){
+        for (int i = 0; i <= 20; i++) {
             System.out.println(i);
         }
     }
 
     //nie przyjmuje żadych argumentów i zwraca void i która wypisuje kolejnych liczb nieparzystych
-    public static void printOdds(){
-        for(int i =1; i<40; i+=2){
+    public static void printOdds() {
+        for (int i = 1; i < 40; i += 2) {
             System.out.println(i);
         }
 
         int oDDNumber = 1;
-        int i=0;
-        while (i<20){
+        int i = 0;
+        while (i < 20) {
             System.out.println(oDDNumber);
-            oDDNumber+=2;
+            oDDNumber += 2;
             i++;
         }
     }
 
-    public static void printOdds2(){
-        int oDDNumber=1;
-        for (int i =0; i<20; i++){
+    public static void printOdds2() {
+        int oDDNumber = 1;
+        for (int i = 0; i < 20; i++) {
             System.out.println(oDDNumber);
-            oDDNumber+=2;
+            oDDNumber += 2;
         }
     }
+
     //napisać metode: dwie liczby i zwróci ich sumę bez używanie +
     public static int suma(int a, int b) {
-        while (b>0) {
+        while (b > 0) {
             a++;
             b--;
         }
@@ -165,12 +162,7 @@ public class Zadania {
     }*/
 
 
-
-
-
-
-
-  //metoda którą wylosowuje jakąś liczbę
+    //metoda którą wylosowuje jakąś liczbę
     //obiekt random w klasie, obiekt random posiada metody do losowania liczb z danego zakresu np. 100
 
    /* public static void main(String[] args) {
