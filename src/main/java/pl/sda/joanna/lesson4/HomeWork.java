@@ -17,13 +17,13 @@ public class HomeWork {
         table2(4);
         tableDiagonal(4);
 
-        String a= "kotek";
+        String a = "kotek";
         System.out.println(reversString(a));
 
         String b = "domek";
-        System.out.println( reverse2(b));
+        System.out.println(reverse2(b));
 
-        int aa= 123;
+        int aa = 123;
         System.out.println(reversNumber(aa));
 
         String a1 = "kobyła ma mały bok";
@@ -42,11 +42,7 @@ public class HomeWork {
     }*/
 
 
-}
-
-
-
-
+    }
 
     //Napisać metodę statyczną (w tej samej klasie co metoda main) która nie przyjmuje żadych argumentów i zwraca void
     // i która wypisuje 20 kolejnych liczb od 0
