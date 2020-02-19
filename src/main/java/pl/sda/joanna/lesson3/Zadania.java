@@ -3,7 +3,7 @@ package pl.sda.joanna.lesson3;
 import java.util.Random;
 import java.util.Scanner;
 
-public class AsiaZadaniaDomowe {
+public class Zadania {
     public static void main(String[] args) {
 
         String a = "kotek ali"; //wypisz na ekran długość string i jego podstring (podnapis zaczyna się od pierwszej litery i kończy na ostatniej
@@ -16,37 +16,44 @@ public class AsiaZadaniaDomowe {
         System.out.println(substring);
         String a2 = new String("fasdfasdfasd"); //nie ma zastosowanie takie tworzenie stringów
         String a3 = new String(a+a2);
-        String a4= a+ a2;*/
+        String a4= a+ a2;
 
-        //Napisać metodę która policzy potege danej liczby całkowitej. Tj. przyjmuje dwa argumenty typu int i zwraca typ long.
 
-       /* pow(3, 5);
-        System.out.println(pow(3, 5));*/
 
-        //metodę statyczną (w tej samej klasie co metoda main) która nie przyjmuje żadych argumentów i zwraca void i która wypisuje 20 kolejnych liczb od 0
 
-        // print20();
-        // printOdds();
+       pow(3, 5);
+        System.out.println(pow(3, 5));
+
+
+
+        print20();
+        printOdds();
+        suma(3,5);
+        System.out.println(suma(3,5)); //wywołanie napisanej metody
     }
-
-    /*public static long pow(int a, int b) {
+    //Napisać metodę która policzy potege danej liczby całkowitej.
+    // Tj. przyjmuje dwa argumenty typu int i zwraca typ long.
+    public static long pow(int a, int b) {
 
         long wynik = 1;
         for (int i = 0; i < b; i++) {
             wynik = wynik * a;
         }
         return wynik; //zwraca wynik
-    }*/
+    }
 
-   /*public static void print20() {
+    //metodę statyczną (w tej samej klasie co metoda main) która nie przyjmuje żadych argumentów i zwraca void
+    // i która wypisuje 20 kolejnych liczb od 0
+
+   public static void print20() {
 
         for (int i=0; i<=20; i++){
             System.out.println(i);
         }
-    }*/
+    }
 
-
-    /*public static void printOdds(){ //nie przyjmuje żadych argumentów i zwraca void i która wypisuje kolejnych liczb nieparzystych
+    //nie przyjmuje żadych argumentów i zwraca void i która wypisuje kolejnych liczb nieparzystych
+    public static void printOdds(){
         for(int i =1; i<40; i+=2){
             System.out.println(i);
         }
@@ -66,56 +73,15 @@ public class AsiaZadaniaDomowe {
             System.out.println(oDDNumber);
             oDDNumber+=2;
         }
-    }*/
-   /* public static void main(String[] args) {
-        suma(3,5);
-        System.out.println(suma(3,5)); //wywołanie napisanej metody
-
     }
-    public static int suma(int a, int b) {     //napisać metode: dwie liczby i zwróci ich sumę bez używanie +
+    //napisać metode: dwie liczby i zwróci ich sumę bez używanie +
+    public static int suma(int a, int b) {
         while (b>0) {
             a++;
             b--;
         }
         return a;
-    }*/
-  /*  public static void main(String[] args) {
-        Scanner napis = new Scanner(System.in); //zczytać z konsoli zdanie
-        String jeden = napis.nextLine();
-        String drugi = napis.nextLine();
-
-        System.out.println(jeden.length()); //wypisac długść
-        System.out.println(jeden.substring(0,jeden.length()/2)); //połowa wyrazu
-        System.out.println(jeden.toUpperCase()); //dużymi literami
-        System.out.println(jeden.toLowerCase()); //małymi literami
-        System.out.println(jeden.replaceAll(" ", ".")); //zamiana spacji na kropki
-
-        //zczytać jeszcze jeden napis i porównać z tym pierwszym. jak będa takie same to wypisac ze sa takie same
-
-        if (drugi.equals(jeden)){
-            System.out.println("jeden jest taki sam jak drugi");}
-        else {
-            System.out.println("jeden jest inny niż drugi");
-        }
-        }
-    }*/
-    /*public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in); //zczytać jakś liczbę z konsooli, użyć switch i wypisać coś (instrukcja switch-case)
-        int kod = scan.nextInt();
-        switch (kod) {
-            case 80:
-                System.out.println("napisz coś tam");
-                break;
-            case 120:
-                System.out.println("może być coś innego");
-                break;
-            case 200:
-                System.out.println("albo jeszcze coś innego");
-                break;
-            default:
-                System.out.println("to już jest koniec");
-        }
-    }*/
+    }
 
    /* public static void main(String[] args) {
 
